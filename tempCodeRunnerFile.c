@@ -1,6 +1,5 @@
-int k=0;
-    // while(k<n){
-    //     printf("%d ",mindelete(root));
-    //     levelOrderTraversal(root);
-    //     k++;
+int arr[n];
+    // printf("enter the elements of array\n");
+    // for(int i=0;i<n;i++){
+    //     scanf("%d",&arr[i]);
     // }
