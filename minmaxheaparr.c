@@ -108,22 +108,53 @@ int extractMax(int arr[], int* size) {
 int main() {
     int arr[MAX_SIZE];
     int size = 0;
-    insertMinHeap(arr, &size, 3);
-    insertMinHeap(arr, &size, 2);
+    insertMinHeap(arr, &size, 37);
+    insertMinHeap(arr, &size,82);
     insertMinHeap(arr, &size, 15);
-    insertMinHeap(arr, &size, 5);
-    insertMinHeap(arr, &size, 4);
-    insertMinHeap(arr, &size, 45);
+    insertMinHeap(arr, &size, 69);
+    insertMinHeap(arr, &size, 54);
+    insertMinHeap(arr, &size, 8);
+    insertMinHeap(arr, &size, 91);
+    insertMinHeap(arr, &size, 20);
+    insertMinHeap(arr, &size, 47);
+    insertMinHeap(arr, &size, 63);
+    insertMinHeap(arr, &size, 29);
+    insertMinHeap(arr, &size, 75);
+    insertMinHeap(arr, &size, 6);
+    insertMinHeap(arr, &size, 42);
+    insertMinHeap(arr, &size, 98);
+    printf("minheap: \n");
+    printf("original array: \n");
+    for(int i = 0; i < size; i++){
+        printf("%d ", arr[i]);
+    }
+    printf("\nmin heap deletion: \n");
     while(size > 0 ){
     printf("%d ", extractMin(arr, &size));}
     printf("\n");
     size = 0; 
-    insertMaxHeap(arr, &size, 3);
-    insertMaxHeap(arr, &size, 2);
+    printf("maxheap: \n" );
+    
+    insertMaxHeap(arr, &size, 37);
+    insertMaxHeap(arr, &size,82);
     insertMaxHeap(arr, &size, 15);
-    insertMaxHeap(arr, &size, 5);
-    insertMaxHeap(arr, &size, 4);
-    insertMaxHeap(arr, &size, 45);
+    insertMaxHeap(arr, &size, 69);
+    insertMaxHeap(arr, &size, 54);
+    insertMaxHeap(arr, &size, 8);
+    insertMaxHeap(arr, &size, 91);
+    insertMaxHeap(arr, &size, 20);
+    insertMaxHeap(arr, &size, 47);
+    insertMaxHeap(arr, &size, 63);
+    insertMaxHeap(arr, &size, 29);
+    insertMaxHeap(arr, &size, 75);
+    insertMaxHeap(arr, &size, 6);
+    insertMaxHeap(arr, &size, 42);
+    insertMaxHeap(arr, &size, 98);
+    printf("original array: \n");
+    for(int i = 0; i < size; i++){
+        printf("%d ", arr[i]);
+    }
+    printf("\nmax heap deletion: \n");
     while(size > 0 ){
     printf("%d ", extractMax(arr, &size));}  
 
